@@ -1,4 +1,4 @@
-package com.lapsa.jersey.providers;
+package com.lapsa.jerseyExtensions.localization;
 
 import java.io.IOException;
 
