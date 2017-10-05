@@ -37,6 +37,12 @@
 			<artifactId>jersey-bean-validation</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<!-- JavaEE -->
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<scm>
