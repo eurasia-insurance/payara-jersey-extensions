@@ -15,23 +15,23 @@
 	<name>Lapsa : Jersey REST extensions</name>
 
 	<properties>
-		<!-- Glassfish -->
-		<gf-embeded.jersey.version>2.10.4</gf-embeded.jersey.version>
+		<lapsa-payara-bom.version>4.1.2-SNAPSHOT</lapsa-payara-bom.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- Glassfish -->
 			<dependency>
-				<groupId>org.glassfish.jersey.ext</groupId>
-				<artifactId>jersey-bean-validation</artifactId>
-				<version>${gf-embeded.jersey.version}</version>
+				<groupId>tech.lapsa.lapsa</groupId>
+				<artifactId>lapsa-payara-bom</artifactId>
+				<version>${lapsa-payara-bom.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
-		<!-- Glassfish -->
+		<!-- Payara -->
 		<dependency>
 			<groupId>org.glassfish.jersey.ext</groupId>
 			<artifactId>jersey-bean-validation</artifactId>
