@@ -1,4 +1,4 @@
-package com.lapsa.jerseyExtensions.localization;
+package tech.lapsa.payara.jersey.localization;
 
 import java.util.List;
 import java.util.Locale;
