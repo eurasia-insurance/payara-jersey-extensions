@@ -21,15 +21,15 @@ public class ValidationMessagesLocalizationProvider
     private HttpHeaders headers;
 
     @Override
-    public void filter(ContainerRequestContext requestContext) throws IOException {
+    public void filter(final ContainerRequestContext requestContext) throws IOException {
 	RequestAcceptableLanguages.setLocalesList(headers.getAcceptableLanguages());
     }
 
     @Override
-    public ValidationConfig getContext(Class<?> type) {
+    public ValidationConfig getContext(final Class<?> type) {
 	final ValidationConfig config = new ValidationConfig();
-	MessageInterpolator delegate = Validation.buildDefaultValidatorFactory().getMessageInterpolator();
-	MessageInterpolator interpolator = new RequestAcceptableLanguagesMessageInterpolator(delegate);
+	final MessageInterpolator delegate = Validation.buildDefaultValidatorFactory().getMessageInterpolator();
+	final MessageInterpolator interpolator = new RequestAcceptableLanguagesMessageInterpolator(delegate);
 	config.messageInterpolator(interpolator);
 	return config;
     }

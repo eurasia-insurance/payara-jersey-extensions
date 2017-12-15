@@ -9,18 +9,18 @@ public class RequestAcceptableLanguagesMessageInterpolator implements MessageInt
 
     private final MessageInterpolator delegate;
 
-    public RequestAcceptableLanguagesMessageInterpolator(MessageInterpolator delegate) {
+    public RequestAcceptableLanguagesMessageInterpolator(final MessageInterpolator delegate) {
 	this.delegate = delegate;
     }
 
     @Override
-    public String interpolate(String message, Context context) {
-	List<Locale> locales = RequestAcceptableLanguages.getLocalesList();
+    public String interpolate(final String message, final Context context) {
+	final List<Locale> locales = RequestAcceptableLanguages.getLocalesList();
 	if (locales != null)
-	    for (Locale locale : locales)
+	    for (final Locale locale : locales)
 		try {
 		    return delegate.interpolate(message, context, locale);
-		} catch (Exception e) {
+		} catch (final Exception e) {
 		    // continue to interpolating in next listed locale
 		}
 
@@ -28,7 +28,7 @@ public class RequestAcceptableLanguagesMessageInterpolator implements MessageInt
     }
 
     @Override
-    public String interpolate(String message, Context context, Locale locale) {
+    public String interpolate(final String message, final Context context, final Locale locale) {
 	return delegate.interpolate(message, context, locale);
     }
 }

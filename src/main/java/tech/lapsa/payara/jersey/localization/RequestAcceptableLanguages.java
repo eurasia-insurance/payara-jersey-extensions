@@ -12,7 +12,7 @@ public class RequestAcceptableLanguages {
 	return LOCALES_LIST.get() == null ? Collections.emptyList() : LOCALES_LIST.get();
     }
 
-    public static void setLocalesList(List<Locale> localesList) {
+    public static void setLocalesList(final List<Locale> localesList) {
 	LOCALES_LIST.set(localesList);
     }
 }
