@@ -42,9 +42,9 @@
 	</dependencies>
 
 	<scm>
-		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/payara/jersey-extensions.git</connection>
-		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/payara/jersey-extensions.git</developerConnection>
-		<tag>v1.1</tag>
+		<connection>scm:git:https://github.com/eurasia-insurance/payara-jersey-extensions.git</connection>
+		<developerConnection>scm:git:https://github.com/eurasia-insurance/payara-jersey-extensions.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
