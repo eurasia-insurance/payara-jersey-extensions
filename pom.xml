@@ -9,14 +9,14 @@
 
 	<groupId>tech.lapsa.payara</groupId>
 	<artifactId>payara-jersey-extensions</artifactId>
-	<version>1.1</version>
+	<version>CURRENT-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Payara Lib : Jersey REST extensions</name>
 
 	<properties>
 		<!-- BOMS -->
-		<payara-bom.version>4.1.2-2</payara-bom.version>
+		<payara-bom.version>CURRENT-SNAPSHOT</payara-bom.version>
 	</properties>
 
 	<dependencyManagement>
