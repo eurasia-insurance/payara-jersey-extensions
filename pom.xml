@@ -47,9 +47,4 @@
 		<tag>HEAD</tag>
 	</scm>
 
-	<issueManagement>
-		<system>gitlab</system>
-		<url>https://gitlab.lapsa.tech/lapsa/payara/jersey-extensions/issues</url>
-	</issueManagement>
-
 </project>
