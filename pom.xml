@@ -16,7 +16,7 @@
 
 	<properties>
 		<!-- BOMS -->
-		<payara-bom.version>CURRENT-SNAPSHOT</payara-bom.version>
+		<payara-bom.version>20190110</payara-bom.version>
 	</properties>
 
 	<dependencyManagement>
